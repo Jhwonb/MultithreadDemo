@@ -11,6 +11,7 @@ import java.util.HashMap;
 
 public class intToRomanTest {
 
+    // 暴力遍历解题 代码可读性：差，性能：耗费较大
     private String int2Roman(int num){
         HashMap map = new HashMap();
         map.put(4,"IV");
@@ -83,7 +84,7 @@ public class intToRomanTest {
         return romanStr;
     }
 
-    // 正确解题方法
+    // 快速解题方法 代码可读性：强 性能：耗费较小
     /**
      * 贪心算法，优先找出与目标值相等的最大值。
      * 有一个非常经典的贪心算法的问题，叫「找零钱问题」，就是在找零钱的时候，优先使用大的面值的纸币（或硬币）找给顾客，这样顾客得到的纸币的张数最少。

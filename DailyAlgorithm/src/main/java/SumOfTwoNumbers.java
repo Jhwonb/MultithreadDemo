@@ -10,9 +10,9 @@ import java.util.HashMap;
  * @Version 1.0.0
  */
 
-public class Test {
+public class SumOfTwoNumbers {
 
-    // 暴力枚举  时间复杂度为O(n^2)
+    // 算法1：暴力枚举  时间复杂度为O(n^2)
     public int[] twoSum1(int[] nums, int target) {
         for(int i = 0;i<nums.length;i++){
             // 第一个数字
@@ -27,7 +27,7 @@ public class Test {
         return new int[0];
     }
 
-    // 使用HashMap 时间复杂度为O(1)
+    // 算法1：使用HashMap 时间复杂度为O(1)
     public int[] twoSum2(int[] nums, int target) {
         HashMap<Integer,Integer> sumMap = new HashMap<>();
         for(int i = 0;i<nums.length;i++){
@@ -40,7 +40,7 @@ public class Test {
         return new int[0];
     }
 
-    // 一个字符串中不出现重复字母最长的长度
+    // 算法2：一个字符串中不出现重复字母最长的长度
     public int lengthOfLongestSubstring(String s) {
         HashMap map = new HashMap();
         int start = 0;
@@ -55,11 +55,11 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        Test test = new Test();
+        SumOfTwoNumbers sumOfTwoNumbers = new SumOfTwoNumbers();
         int[] nums = {3,2,95,4,-3};
         int target = 92;
-        System.out.println(Arrays.toString(test.twoSum2(nums,target)));
-        System.out.println(test.lengthOfLongestSubstring("dvdf"));
+        System.out.println(Arrays.toString(sumOfTwoNumbers.twoSum2(nums,target)));
+        System.out.println(sumOfTwoNumbers.lengthOfLongestSubstring("dvdf"));
     }
 
 }
