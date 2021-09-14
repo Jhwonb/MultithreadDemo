@@ -64,7 +64,6 @@ public class PalindromeSubstring {
      * @author houby
      * @param s
      * @return java.lang.String
-     * @throws GeneralException
      * @date 2021/9/7 18:02
      */
     public static String longestPalindrome1(String s) {
