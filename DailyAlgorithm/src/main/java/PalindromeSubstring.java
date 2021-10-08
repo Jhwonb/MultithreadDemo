@@ -107,7 +107,7 @@ public class PalindromeSubstring {
     }
 
     /**
-     * 动态规划法
+     * 动态规划法 需要想到状态dp[i][j]的代表 以及写出转移方程
      * -状态: dp[i][j] 表示子串s[i..j] 是否为回文子串
      * -得到状态转移方程: dp[i][j] = (s[i] == s[j]) and dp[i+1][j-1]
      * -边界条件: j-1-(i+1) + 1 <2 即 j-i<3
