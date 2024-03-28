@@ -1,9 +1,9 @@
 /**
  * @Title DynamicSum
- * @Description ¸øÄãÒ»¸öÊı×é nums ¡£Êı×é¡¸¶¯Ì¬ºÍ¡¹µÄ¼ÆËã¹«Ê½Îª£ºrunningSum[i] = sum(nums[0]¡­nums[i])¡£
- *              Çë·µ»Ø nums µÄ¶¯Ì¬ºÍ¡£
- * @Example     ¡ª¡ªÊäÈë£ºnums = [1,2,3,4] Êä³ö£º[1,3,6,10] ½âÊÍ£º¶¯Ì¬ºÍ¼ÆËã¹ı³ÌÎª [1, 1+2, 1+2+3, 1+2+3+4]¡£
- * @Difficulty  ¼òµ¥
+ * @Description ç»™ä½ ä¸€ä¸ªæ•°ç»„ nums ã€‚æ•°ç»„ã€ŒåŠ¨æ€å’Œã€çš„è®¡ç®—å…¬å¼ä¸ºï¼šrunningSum[i] = sum(nums[0]â€¦nums[i])ã€‚
+ *              è¯·è¿”å› nums çš„åŠ¨æ€å’Œã€‚
+ * @Example     â€”â€”è¾“å…¥ï¼šnums = [1,2,3,4] è¾“å‡ºï¼š[1,3,6,10] è§£é‡Šï¼šåŠ¨æ€å’Œè®¡ç®—è¿‡ç¨‹ä¸º [1, 1+2, 1+2+3, 1+2+3+4]ã€‚
+ * @Difficulty  ç®€å•
  * @Author      hboy
  * @Date        2021/8/28 16:26
  * @Version 1.0.0
@@ -11,7 +11,7 @@
 
 public class DynamicSum {
 
-    // ÎÒµÄ½âÌâ
+    // æˆ‘çš„è§£é¢˜
     public static int[] runningSum(int[] nums) {
         int numsLength = nums.length;
         int[] runningSum = new int[numsLength];
@@ -26,7 +26,7 @@ public class DynamicSum {
         return runningSum;
     }
 
-    // ¹Ù·½½âÌâ Ê±¼ä¸´ÔÓ¶ÈO(n) ¿Õ¼ä¸´ÔÓ¶ÈO(1)
+    // å®˜æ–¹è§£é¢˜ æ—¶é—´å¤æ‚åº¦O(n) ç©ºé—´å¤æ‚åº¦O(1)
     public static int[] runningSum2(int[] nums) {
         int numsLength = nums.length;
         for (int i = 1; i < numsLength; i++) {
